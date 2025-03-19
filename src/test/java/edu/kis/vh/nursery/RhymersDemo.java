@@ -13,11 +13,11 @@ class RhymersDemo {
         
         for (int i = 1; i < 15; i++)
             for (int j = 0; j < 3; j++)
-                rhymers[j].countIn(i);
+                rhymers[j].countInTest(i);
         
         java.util.Random rn = new java.util.Random();
         for (int i = 1; i < 15; i++)
-            rhymers[3].countIn(rn.nextInt(20));
+            rhymers[3].countInTest(rn.nextInt(20));
         
         for (int i = 0; i < rhymers.length; i++) {
             while (!rhymers[i].callCheck())
@@ -26,7 +26,7 @@ class RhymersDemo {
         }
         
         System.out.println("total rejected is "
-                + ((HanoiRhymer) rhymers[3]).reportRejected());
+                + ((HanoiRhymer) rhymers[3]).ReportRejectedTest());
         
     }
     

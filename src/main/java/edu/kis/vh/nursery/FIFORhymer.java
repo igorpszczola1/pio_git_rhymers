@@ -7,12 +7,12 @@ public class FIFORhymer extends CountingOutRhymer {
     @Override
     public int countOut() {
         while (!callCheck())
-            temp.countIn(super.countOut());
+            temp.countInTest(super.countOut());
 
         int ret = temp.countOut();
 
         while (!temp.callCheck())
-            countIn(temp.countOut());
+            countInTest(temp.countOut());
 
         return ret;
     }

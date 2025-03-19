@@ -6,7 +6,7 @@ public class CountingOutRhymer {
 
     public int total = -1;
 
-    public void countIn(int in) {
+    public void countInTest(int in) {
         if (!isFull())
             NUMBERS[++total] = in;
     }
