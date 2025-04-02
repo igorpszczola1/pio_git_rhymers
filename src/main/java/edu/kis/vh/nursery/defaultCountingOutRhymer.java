@@ -11,6 +11,26 @@ public class defaultCountingOutRhymer {
 
     private int totalNum = -1;
 
+    public static int getDefaultError() {
+        return DEFAULT_ERROR;
+    }
+
+    public static int getIfFull() {
+        return IF_FULL;
+    }
+
+    public static int getCountOutErrorReturnValue() {
+        return COUNT_OUT_ERROR_RETURN_VALUE;
+    }
+
+    public static int getPeekabooErrorReturnValue() {
+        return PEEKABOO_ERROR_RETURN_VALUE;
+    }
+
+    public static int getCAPACITY() {
+        return CAPACITY;
+    }
+
     public int getTotalNum() {
         return totalNum;
     }
@@ -38,5 +58,9 @@ public class defaultCountingOutRhymer {
         if (callCheck())
             return COUNT_OUT_ERROR_RETURN_VALUE;
         return numbers[totalNum--];
+    }
+
+    public int[] getNumbers() {
+        return numbers;
     }
 }
