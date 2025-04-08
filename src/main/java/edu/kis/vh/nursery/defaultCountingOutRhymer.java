@@ -109,14 +109,6 @@ public class defaultCountingOutRhymer {
         return totalNum == IF_FULL;
     }
 
-    protected boolean callCheck() {
-            return totalNum == DEFAULT_ERROR;
-        }
-
-    protected boolean isFull() {
-                return totalNum == IF_FULL;
-            }
-
 
     /**
      * Zwraca ostatni element ze stosu bez jego usuwania.
