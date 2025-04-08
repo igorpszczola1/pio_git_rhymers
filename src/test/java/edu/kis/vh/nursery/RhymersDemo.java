@@ -3,6 +3,8 @@ package edu.kis.vh.nursery;
 import edu.kis.vh.nursery.factory.DefaultRhymersFactory;
 import edu.kis.vh.nursery.factory.Rhymersfactory;
 
+//Projekt jest poprawny
+
 class RhymersDemo {
 
     public static void main(String[] args) {
@@ -11,6 +13,7 @@ class RhymersDemo {
         testRhymers(factory);
 
     }
+
 
     private static void testRhymers(Rhymersfactory factory) {
         defaultCountingOutRhymer[] rhymers = { factory.GetStandardRhymer(), factory.GetFalseRhymer(),
